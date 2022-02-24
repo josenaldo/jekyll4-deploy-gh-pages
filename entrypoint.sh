@@ -26,10 +26,10 @@ echo "Publishing..."
 
 cd ${DEST}
 
-git init
+git init -b ${SOURCE_BRANCH}
 git config --global init.defaultBranch "${SOURCE_BRANCH}"
 git config user.name "${GITHUB_ACTOR}"
 git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 git add .
 git commit -m "published by GitHub Actions"
-git push --force ${REPO} main:${BRANCH}
+git push --force ${REPO} ${SOURCE_BRANCH}:${BRANCH}
