@@ -10,7 +10,7 @@ BUNDLE_BUILD__SASSC=--disable-march-tune-native
 
 echo "Installing gems..."
 
-mkdir -p vendor/bundle
+# mkdir -p vendor/bundle
 bundle config path vendor/bundle
 bundle install --jobs 4 --retry 3
 

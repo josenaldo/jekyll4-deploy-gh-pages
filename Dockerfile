@@ -1,4 +1,4 @@
-FROM jekyll/jekyll:latest
+FROM ruby:2.7.0
 
 # install a modern bundler version
 RUN gem install bundler
