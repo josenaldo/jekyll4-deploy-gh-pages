@@ -21,7 +21,7 @@ if [ ! -z $YARN_ENV ]; then
   yarn
 fi
 
-JEKYLL_ENV=production NODE_ENV=production bundle exec jekyll build
+JEKYLL_ENV=production NODE_ENV=production bundle exec jekyll build --trace
 
 echo "Publishing..."
 
