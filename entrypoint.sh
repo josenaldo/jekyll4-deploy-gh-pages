@@ -12,6 +12,7 @@ echo "Installing gems..."
 
 bundle config path vendor/bundle
 bundle install --jobs 4 --retry 3
+chmod 775 /github/workspace/vendor/bundle/ruby/2.7.0
 
 echo "Building Jekyll site..."
 
