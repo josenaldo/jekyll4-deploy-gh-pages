@@ -9,10 +9,9 @@ BRANCH="gh-pages"
 BUNDLE_BUILD__SASSC=--disable-march-tune-native
 
 echo "Installing gems..."
-
+chmod 775 /github/workspace/vendor/bundle/ruby/2.7.0
 bundle config path vendor/bundle
 bundle install --jobs 4 --retry 3
-chmod 775 /github/workspace/vendor/bundle/ruby/2.7.0
 
 echo "Building Jekyll site..."
 
